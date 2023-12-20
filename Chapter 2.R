@@ -142,3 +142,8 @@ rep(x = c(3, 62, 8.3), each = 2)
 rep(x = c(3, 62, 8.3), times = 3, each = 2)
 
 # the rep function is given a single value or a vector of values as its argument x, as well as a value for the arguments times and each
+# The value for times provide the number of times to repeat x, and each provides the number of times to repeat each element of x.
+# As with seq, you can includde the result of rep in a vector of the same data type:
+foo <- 4
+c(3,8.3,rep(x=32,times=foo),seq(from=-2,to=1,length.out=foo+1))
+
