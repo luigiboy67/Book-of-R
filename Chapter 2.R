@@ -147,3 +147,36 @@ rep(x = c(3, 62, 8.3), times = 3, each = 2)
 foo <- 4
 c(3,8.3,rep(x=32,times=foo),seq(from=-2,to=1,length.out=foo+1))
 
+# sort function sorts a vector in increasing or decreasing order
+sort(x=c(2.5,-1,-10,3.44),decreasing=FALSE)
+sort(x=c(2.5,-1,-10,3.44),decreasing=TRUE)
+
+foo <- seq(from=4.3,to=5.5,length.out=8)
+foo
+
+bar <-  sort(x=foo, decreasing = TRUE)
+bar
+
+sort(x=c(foo,bar),decreasing=FALSE)
+
+# length function determines how many entries exist in a vector given as the argument x.
+length(x=c(3,2,8,1))
+length(x=5:13)
+
+foo <- 4
+bar <- c(3,8.3,rep(x=32,times=foo),seq(from=-2,to=1,length.out=foo+1))
+length(x=bar)
+
+# 2.3.3
+
+# numbers inside [] represent an index
+# the index corresponds to the position of a value within a vector
+# subsetting allows you to retrieve specific elements from a vector
+# ex:
+myvec <- c(5,-2.3,4,4,4,6,8,10,40221,-8)
+length(myvec)
+myvec[1]
+foo <- myvec[2]
+foo
+myvec[length(myvec)]
+
